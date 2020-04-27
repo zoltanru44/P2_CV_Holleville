@@ -26,22 +26,26 @@ header {
 
 /*Options du navigateur*/
 .nav {
-  padding-top: 10px;
-  background-color: #1196C5; }
+  background-color: #1196C5;
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  top: 233px; }
   .nav__ul {
+    /*bloc des trois items*/
+    display: flex;
+    justify-content: space-around;
     padding: 0;
-    margin: 0;
-    display: inline-flex;
-    justify-content: center; }
+    margin: 0; }
   .nav__link {
     list-style-type: none;
     /*enlève les puces*/
-    font-size: 16px;
-    margin: 0 10px 0 10px; }
+    font-size: 20px;
+    /*margin: 0 10px 0 10px;*/ }
   .nav__link a {
     /*permet de mettre les lien en noir et sans surlignage*/
     text-decoration: none;
-    color: black; }
+    color: white; }
 
 /*partie droite du bandeau*/
 .presentation {
@@ -79,6 +83,7 @@ header {
       background-color: #1196C5; }
       .informations__container .col_gauche h1 {
         /*titres surlignés en noir*/
+        margin-top: 0;
         text-align: center;
         text-transform: uppercase;
         color: #1196C5;
@@ -115,19 +120,14 @@ header {
           display: inline-block;
           font-size: 30px; }
       .informations__container .col_droite table td {
-        text-align: left; }
+        text-align: left;
+        vertical-align: top; }
         .informations__container .col_droite table td h1 {
           font-size: 25px; }
         .informations__container .col_droite table td h2 {
           font-size: 20px; }
         .informations__container .col_droite table td p {
           font-size: 15px; }
-      .informations__container .col_droite ul {
-        width: 9vw;
-        vertical-align: top;
-        padding: 15px;
-        list-style-type: none;
-        /*enlève les puces*/ }
       .informations__container .col_droite .recommandation {
         width: 100%; }
         .informations__container .col_droite .recommandation td {
@@ -139,16 +139,22 @@ header {
   /*icones loisirs*/
   display: inline; }
   .icones__gauche {
-    font-size: 50px;
+    /*Icones dans un cercle*/
+    font-size: 40px;
+    /*taille icones*/
     margin: 0 5px;
+    padding: 5px;
+    /*permet d'avoir de l'espace dans le cercle*/
     text-align: center;
     border: 1px solid black;
-    border-radius: 50%; }
-
-.icones_droites {
-  /*icones de droite*/
-  font-size: 40px;
-  color: #1196C5; }
+    border-radius: 50%;
+    overflow: hidden;
+    /* permet d'enlever ce qui dépasse*/ }
+  .icones__droites {
+    /*icones de droite*/
+    font-size: 30px;
+    color: #1196C5;
+    margin-right: 10px; }
 
 .dot {
   /*puces*/

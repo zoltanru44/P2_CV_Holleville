@@ -28,25 +28,30 @@ header {
 }
 /*Options du navigateur*/
 .nav{
-    padding-top: 10px;
     background-color: $clr_primary;
+    position: absolute;
+    width: 250px;
+    height: 25px;
+    top: 233px;
     
-    &__ul{
+    
+    &__ul{ /*bloc des trois items*/
+        display:flex;
+        justify-content: space-around;
         padding: 0;
         margin: 0;
-        display: inline-flex;
-        justify-content: center;
               }
     &__link{
         list-style-type: none; /*enlève les puces*/
-        font-size: 16px;
-        margin: 0 10px 0 10px;
+        font-size: 20px;
+        /*margin: 0 10px 0 10px;*/
         
         
                 }
     &__link a{ /*permet de mettre les lien en noir et sans surlignage*/
         text-decoration: none;
-        color: black;
+        color: white;
+        
     }
     
 }/*partie droite du bandeau*/
@@ -90,15 +95,15 @@ header {
         & .col_gauche {
             width: 250px;
             background-color: $clr-primary;
-            
+                        
             
             & h1{ /*titres surlignés en noir*/
-                
-                text-align: center;
-        text-transform: uppercase;
-        color: $clr_primary;
-        background-color: black;
-        font-family: $font_style_titre;
+            margin-top: 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: $clr_primary;
+            background-color: black;
+            font-family: $font_style_titre;
             }
             &__infos{ /*text d'info parie gauche*/
                  margin: 10px ;
@@ -143,7 +148,8 @@ header {
     & table{
         & td{
             text-align: left;
-           & h1{
+            vertical-align: top;
+            & h1{
                 font-size: 25px;
             }
             & h2{
@@ -156,13 +162,7 @@ header {
         }
         
         }
-        & ul{
-                width: 9vw;
-            vertical-align: top;
-            padding: 15px;
-            list-style-type: none; /*enlève les puces*/
-            
-            }
+        
     & .recommandation{
         width: 100%;
             & td{
@@ -179,18 +179,23 @@ header {
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
     display: inline;
-    &__gauche{ 
-    font-size: 50px;
-    margin: 0 5px;
-    text-align: center;
-        border: 1px solid black;
-        border-radius: 50%;
+    
+        &__gauche{ /*Icones dans un cercle*/
+            font-size: 40px; /*taille icones*/
+            margin: 0 5px;
+            padding: 5px; /*permet d'avoir de l'espace dans le cercle*/
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 50%;
+            overflow: hidden; /* permet d'enlever ce qui dépasse*/
     }
-    } 
-.icones_droites{ /*icones de droite*/
-    font-size: 40px;
-    color: $clr-primary;
+        &__droites{ /*icones de droite*/
+            font-size: 30px;
+            color: $clr-primary;
+            margin-right: 10px;
 }
+    } 
+
 .dot{ /*puces*/
     font-size:10px;
     
