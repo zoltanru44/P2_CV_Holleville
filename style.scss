@@ -14,7 +14,7 @@ header {
 }
 .profil{ /*bandeau d'entête*/
     width: 250px;
-    height: 234px;
+    height: 250px;
     background-color: $clr_primary;
     
     &__picture{ /*image de profil*/
@@ -110,7 +110,7 @@ header {
                 text-align: justify;
                 font-size: 17px;
                 & .apropos{/*cas "A propos" qui est plus grande*/
-                    height: 750px;
+                    height: 550px;
                 }
                 & .loisir_pict{
                     height: 50px;
@@ -124,9 +124,9 @@ header {
         }
         /*colonne de droite*/
         & .col_droite{
-            width: 80%;
-            padding: 20px 50px;
-            flex:1;
+            width: 60%;
+            margin-left: 40px;
+            
                 &__title{
             border-bottom:2px solid $clr-primary ;
             height: 70px;
@@ -147,17 +147,38 @@ header {
     }
     & table{
         & td{
-            text-align: left;
             vertical-align: top;
-            & h1{
-                font-size: 25px;
+            
+            & .cellule_gauche{
+                width: 150px;
+                display: flex;
+                margin-top: 20px;
+                
+                & p{
+                    margin: 0 0 0 10px;
+                    
+                    
+                }
+                
             }
-            & h2{
-                font-size: 20px;
+            & .cellule_droite{
+                
+                & h1{
+                    margin: 20px 0 5px 0;
+                    font-size: 25px;
             }
-            & p{
-                font-size: 15px;
+                & h2{
+                    margin: 5px 0 5px 0;
+                    font-size: 20px;
             }
+                & p{
+                    margin: 5px 0 5px 0;
+                    font-size: 15px;
+                
+            }
+            
+            }
+            
             
         }
         
@@ -198,6 +219,9 @@ header {
 
 .dot{ /*puces*/
     font-size:10px;
+    margin-top: 3px;
+    color: $clr-primary;
+    
     
 }
 
