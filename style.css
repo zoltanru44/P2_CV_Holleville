@@ -71,6 +71,9 @@ header {
     /*colonne de gauche*/
     display: flex;
     /*colonne de droite*/ }
+    @media screen and (max-width: 720px) {
+      .informations__container {
+        flex-direction: column-reverse; } }
     .informations__container .col_gauche {
       width: 250px;
       background-color: #1196C5; }
@@ -88,14 +91,20 @@ header {
         font-size: 17px; }
         .informations__container .col_gauche__infos .apropos {
           /*cas "A propos" qui est plus grande*/
-          height: 800px; }
+          height: 750px; }
+        .informations__container .col_gauche__infos .loisir_pict {
+          height: 50px;
+          width: auto;
+          margin: 5px;
+          border-radius: 50%;
+          color: #1196C5; }
     .informations__container .col_droite {
       width: 80%;
       padding: 20px 50px;
       flex: 1; }
       .informations__container .col_droite__title {
         border-bottom: 2px solid #1196C5;
-        height: 90px; }
+        height: 70px; }
         .informations__container .col_droite__title__logo {
           display: inline-block;
           height: 30%;
@@ -116,12 +125,34 @@ header {
       .informations__container .col_droite ul {
         width: 9vw;
         vertical-align: top;
-        padding: 15px; }
+        padding: 15px;
+        list-style-type: none;
+        /*enlève les puces*/ }
       .informations__container .col_droite .recommandation {
         width: 100%; }
         .informations__container .col_droite .recommandation td {
           width: 50%;
           text-align: left; }
+
+/*Mise en forme des icones*/
+.icones {
+  /*icones loisirs*/
+  display: inline; }
+  .icones__gauche {
+    font-size: 50px;
+    margin: 0 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%; }
+
+.icones_droites {
+  /*icones de droite*/
+  font-size: 40px;
+  color: #1196C5; }
+
+.dot {
+  /*puces*/
+  font-size: 10px; }
 
 /*body{
     display: flex;

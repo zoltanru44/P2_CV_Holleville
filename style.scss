@@ -84,6 +84,9 @@ header {
     &__container{
         /*colonne de gauche*/
        display: flex;
+        @media screen and (max-width: 720px){
+            flex-direction: column-reverse;
+        }
         & .col_gauche {
             width: 250px;
             background-color: $clr-primary;
@@ -102,7 +105,14 @@ header {
                 text-align: justify;
                 font-size: 17px;
                 & .apropos{/*cas "A propos" qui est plus grande*/
-                    height: 800px;
+                    height: 750px;
+                }
+                & .loisir_pict{
+                    height: 50px;
+                    width: auto;
+                    margin: 5px;
+                    border-radius: 50%;
+                    color: $clr-primary;
                 }
             }
             
@@ -113,9 +123,8 @@ header {
             padding: 20px 50px;
             flex:1;
                 &__title{
-      
-        border-bottom:2px solid $clr-primary ;
-         height: 90px;
+            border-bottom:2px solid $clr-primary ;
+            height: 70px;
         
         &__logo{
             display: inline-block;
@@ -151,6 +160,7 @@ header {
                 width: 9vw;
             vertical-align: top;
             padding: 15px;
+            list-style-type: none; /*enlève les puces*/
             
             }
     & .recommandation{
@@ -161,13 +171,30 @@ header {
                 text-align: left;
             }
     }
-
             }
             
         }
     }
     
-
+/*Mise en forme des icones*/
+.icones{  /*icones loisirs*/
+    display: inline;
+    &__gauche{ 
+    font-size: 50px;
+    margin: 0 5px;
+    text-align: center;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    } 
+.icones_droites{ /*icones de droite*/
+    font-size: 40px;
+    color: $clr-primary;
+}
+.dot{ /*puces*/
+    font-size:10px;
+    
+}
 
 /*body{
     display: flex;
