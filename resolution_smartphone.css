@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* Scss Document */
+/*Polices de style*/
+/*pour les appeler :
+
+    font-family: 'Baloo Bhaina 2', cursive;
+
+    font-family: 'Karla', sans-serif; (400 et 700)
+
+    font-family: 'Didact Gothic', sans-serif;
+
+    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)
+
+*/
+header {
+  display: flex;
+  /*utilisation de flexblox*/
+  height: 300px;
+  flex-direction: column; }
+
+.profil {
+  /*bandeau d'entête*/
+  width: 100%;
+  height: 200px;
+  background-color: #1196C5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .profil__picture {
+    /*image de profil*/
+    width: 150px;
+    height: 150px;
+    margin: 0; }
+
+/*partie droite du bandeau*/
+.presentation {
+  width: 100%;
+  height: 100px; }
+  .presentation h1 {
+    font-size: 50px;
+    margin: 0;
+    text-align: center; }
+  .presentation h2 {
+    text-align: center; }
+
+/*bloc général des deux colonnes*/
+.informations {
+  margin: 0; }
+  .informations__container {
+    /*colonne de gauche-fin*/
+    flex-direction: column-reverse;
+    /*colonne de droite -Début*/ }
+    .informations__container .col_gauche {
+      width: 100%; }
+      .informations__container .col_gauche__infos {
+        /*text d'info partie gauche*/
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+        line-height: 22px; }
+        .informations__container .col_gauche__infos .apropos {
+          /*cas "A propos" qui est plus grande*/
+          height: auto;
+          text-align: center; }
+        .informations__container .col_gauche__infos .loisir {
+          display: flex;
+          justify-content: center; }
+    .informations__container .col_droite {
+      width: 100%;
+      margin: 0 20px 0 20px; }
+      .informations__container .col_droite__title {
+        height: 60px;
+        margin: 0 0 10px 0; }
+      .informations__container .col_droite table {
+        /*contenu du tableau*/ }
+        .informations__container .col_droite table td .cellule_gauche {
+          width: 100%;
+          margin-right: 20px; }
+        .informations__container .col_droite table td .cellule_droite h1 {
+          text-align: center; }
+        .informations__container .col_droite table td .cellule_droite h2 {
+          text-align: center; }
+        .informations__container .col_droite table td .cellule_droite p {
+          text-align: center; }
+      .informations__container .col_droite .recommandation {
+        width: 100%; }
+        .informations__container .col_droite .recommandation td {
+          width: 50%;
+          text-align: left; }
+        .informations__container .col_droite .recommandation h1 {
+          margin: 20px 0 5px 0;
+          font-size: 25px;
+          font-family: "Baloo 2", cursive;
+          font-weight: 600;
+          line-height: 20px; }
+        .informations__container .col_droite .recommandation h2 {
+          margin: 5px 0 5px 0;
+          font-size: 20px;
+          font-family: "Baloo 2", cursive;
+          font-weight: 500; }
+        .informations__container .col_droite .recommandation p {
+          margin: 5px 0 5px 0;
+          font-size: 15px;
+          font-family: "Baloo 2", cursive;
+          font-weight: 400; }
+
+/*Mise en forme des icones*/
+.icones {
+  /*icones loisirs*/
+  display: inline; }
+  .icones__gauche {
+    /*Icones dans un cercle*/
+    font-size: 40px;
+    /*taille icones*/
+    margin: 0 5px;
+    padding: 5px;
+    /*permet d'avoir de l'espace dans le cercle*/
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    /* permet d'enlever ce qui dépasse*/ }
+  .icones__droites {
+    /*icones de droite*/
+    font-size: 30px;
+    color: #1196C5;
+    margin-right: 10px; }
+
+.dot {
+  /*puces*/
+  font-size: 10px;
+  margin-top: 4px;
+  color: #1196C5; }
+
+/*body{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.perso{
+    background-color: $yellow;
+    display: block;
+    width: 300px;
+    height: auto;
+}
+.profil{
+    height: 150px;
+    
+    &__pict{
+    display: block;
+    width: 100px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: 15px auto 15px auto;
+}
+}
+
+.conteneur {
+    & h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: $yellow;
+    background-color: black;
+    font-family: $font_style_titre;
+    
+    }
+    &.propos{
+        height: 800px;
+    }
+}
+.infos{
+    margin: 10px 10% 0 10% ;
+    text-align: justify;
+    font-size: 20px;
+
+    & .loisir_pict{
+        
+        width: 25%;
+        height: 25%;
+        border: solid black 2px;
+        border-radius: 50%;
+        margin: 10px 2% 10px 2%;
+    
+    }
+}
+.pro{
+    display: block;
+    width: 1000px;
+    background-color:#F9E6C2;
+    padding: 4%;
+    }
+.presentation {
+    & h1 {
+    font-size: 50px;
+        margin: auto 10px 0 auto;
+        font-family: $font_style_titre;
+    & strong{
+        color: $yellow;
+    }
+    }
+    & h2{
+        font-size: 20px;
+        margin: 0 0 50px 0;
+        border-bottom:2px solid $yellow ;
+        font-family: $font_style_titre;
+                     }
+}
+.informations{
+    &__title{
+        display: block;
+        border-bottom:2px solid $yellow ;
+         height: 90px;
+        
+        &__logo{
+            display: inline-block;
+            height: 30%;
+            width: auto;
+            margin-right: 2%;
+            color: $yellow;
+        }
+        
+        & h2{
+            display: inline-block;
+            font-size: 30px;
+                
+        }
+    }
+    & table{
+        & td{
+            text-align: left;
+           & h1{
+                font-size: 25px;
+            }
+            & h2{
+                font-size: 20px;
+            }
+            & p{
+                font-size: 15px;
+            }
+            
+        }
+        
+        }
+        & ul{
+                width: 9vw;
+            vertical-align: top;
+            padding: 15px;
+            & .ligne1{
+                list-style-image: url("/img/dot-circle-regular.svg");
+                
+                                
+            }
+            & .ligne2{
+                list-style-image: url("/img/circle-solid.svg");
+            }
+            }
+    & .recommandation{
+        width: 100%;
+            & td{
+               
+                width: 50%;
+                text-align: left;
+            }
+    }
+}
+*/

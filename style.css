@@ -3,7 +3,6 @@
 /*Polices de style*/
 /*pour les appeler :
 
-    
     font-family: 'Baloo Bhaina 2', cursive;
 
     font-family: 'Karla', sans-serif; (400 et 700)
@@ -11,8 +10,6 @@
     font-family: 'Didact Gothic', sans-serif;
 
     font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)
-
-
 
 */
 /*enlever le surlignage de "mark"*/
@@ -41,8 +38,7 @@ header {
 
 /*partie droite du bandeau*/
 .presentation {
-  width: 100%;
-  background-color: antiquewhite; }
+  width: 100%; }
   .presentation h1 {
     font-size: 50px;
     margin: 75px 75px auto auto;
@@ -68,9 +64,6 @@ header {
     /*colonne de gauche*/
     display: flex;
     /*colonne de droite*/ }
-    @media screen and (max-width: 720px) {
-      .informations__container {
-        flex-direction: column-reverse; } }
     .informations__container .col_gauche {
       width: 250px;
       background-color: #1196C5; }
@@ -101,13 +94,15 @@ header {
           margin: 0; }
     .informations__container .col_droite {
       width: 60%;
-      margin-left: 40px; }
+      margin: 0 0 0 40px; }
       .informations__container .col_droite__title {
         border-bottom: 2px solid #1196C5;
-        height: 70px;
+        height: 60px;
         font-family: "Karla", sans-serif;
         font-weight: 700;
-        margin: 10px 0 10px 0; }
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center; }
         .informations__container .col_droite__title h2 {
           /*titres des rubriques*/
           display: inline-block;
@@ -190,136 +185,3 @@ header {
   font-size: 10px;
   margin-top: 4px;
   color: #1196C5; }
-
-/*body{
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
-.perso{
-    background-color: $yellow;
-    display: block;
-    width: 300px;
-    height: auto;
-}
-.profil{
-    height: 150px;
-    
-    &__pict{
-    display: block;
-    width: 100px;
-    height: 120px;
-    overflow: hidden;
-    border-radius: 50px;
-    margin: 15px auto 15px auto;
-}
-}
-
-.conteneur {
-    & h1{
-    text-align: center;
-    text-transform: uppercase;
-    color: $yellow;
-    background-color: black;
-    font-family: $font_style_titre;
-    
-    }
-    &.propos{
-        height: 800px;
-    }
-}
-.infos{
-    margin: 10px 10% 0 10% ;
-    text-align: justify;
-    font-size: 20px;
-
-    & .loisir_pict{
-        
-        width: 25%;
-        height: 25%;
-        border: solid black 2px;
-        border-radius: 50%;
-        margin: 10px 2% 10px 2%;
-    
-    }
-}
-.pro{
-    display: block;
-    width: 1000px;
-    background-color:#F9E6C2;
-    padding: 4%;
-    }
-.presentation {
-    & h1 {
-    font-size: 50px;
-        margin: auto 10px 0 auto;
-        font-family: $font_style_titre;
-    & strong{
-        color: $yellow;
-    }
-    }
-    & h2{
-        font-size: 20px;
-        margin: 0 0 50px 0;
-        border-bottom:2px solid $yellow ;
-        font-family: $font_style_titre;
-                     }
-}
-.informations{
-    &__title{
-        display: block;
-        border-bottom:2px solid $yellow ;
-         height: 90px;
-        
-        &__logo{
-            display: inline-block;
-            height: 30%;
-            width: auto;
-            margin-right: 2%;
-            color: $yellow;
-        }
-        
-        & h2{
-            display: inline-block;
-            font-size: 30px;
-                
-        }
-    }
-    & table{
-        & td{
-            text-align: left;
-           & h1{
-                font-size: 25px;
-            }
-            & h2{
-                font-size: 20px;
-            }
-            & p{
-                font-size: 15px;
-            }
-            
-        }
-        
-        }
-        & ul{
-                width: 9vw;
-            vertical-align: top;
-            padding: 15px;
-            & .ligne1{
-                list-style-image: url("/img/dot-circle-regular.svg");
-                
-                                
-            }
-            & .ligne2{
-                list-style-image: url("/img/circle-solid.svg");
-            }
-            }
-    & .recommandation{
-        width: 100%;
-            & td{
-               
-                width: 50%;
-                text-align: left;
-            }
-    }
-}
-*/
