@@ -1,5 +1,20 @@
 @charset "UTF-8";
 /* Scss Document */
+/*Polices de style*/
+/*pour les appeler :
+
+    
+    font-family: 'Baloo Bhaina 2', cursive;
+
+    font-family: 'Karla', sans-serif; (400 et 700)
+
+    font-family: 'Didact Gothic', sans-serif;
+
+    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)
+
+
+
+*/
 /*enlever le surlignage de "mark"*/
 mark {
   background-color: transparent; }
@@ -54,7 +69,7 @@ header {
   .presentation h1 {
     font-size: 50px;
     margin: 75px 75px auto auto;
-    font-family: Arial, "sans-serif";
+    font-family: "Karla", sans-serif;
     text-indent: 50px;
     text-shadow: 1px 1px 0.5px black; }
     .presentation h1 mark {
@@ -62,11 +77,12 @@ header {
   .presentation h2 {
     font-size: 20px;
     margin: 0 0 50px 0;
-    font-family: Arial, "sans-serif";
+    font-family: "Karla", sans-serif;
     text-indent: 60px; }
-    .presentation h2 mark {
-      /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/
-      border-bottom: 1.2px solid #1196C5; }
+  .presentation h2::before {
+    content: "Devel";
+    border-bottom: 1.2px solid #1196C5;
+    /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/ }
 
 /*bloc général des deux colonnes*/
 .informations {
@@ -88,58 +104,87 @@ header {
         text-transform: uppercase;
         color: #1196C5;
         background-color: black;
-        font-family: Arial, "sans-serif"; }
+        font-family: "Karla", sans-serif; }
       .informations__container .col_gauche__infos {
         /*text d'info parie gauche*/
         margin: 10px;
         text-align: justify;
-        font-size: 17px; }
+        font-size: 17px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 500;
+        line-height: 20px; }
         .informations__container .col_gauche__infos .apropos {
           /*cas "A propos" qui est plus grande*/
-          height: 550px; }
-        .informations__container .col_gauche__infos .loisir_pict {
-          height: 50px;
-          width: auto;
-          margin: 5px;
-          border-radius: 50%;
-          color: #1196C5; }
+          height: 550px;
+          text-align: justify; }
+        .informations__container .col_gauche__infos .loisir {
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+          margin: 0; }
     .informations__container .col_droite {
       width: 60%;
       margin-left: 40px; }
       .informations__container .col_droite__title {
         border-bottom: 2px solid #1196C5;
-        height: 70px; }
-        .informations__container .col_droite__title__logo {
-          display: inline-block;
-          height: 30%;
-          width: auto;
-          margin-right: 2%;
-          color: #1196C5; }
+        height: 70px;
+        font-family: "Karla", sans-serif;
+        font-weight: 700;
+        margin: 10px 0 10px 0; }
         .informations__container .col_droite__title h2 {
+          /*titres des rubriques*/
           display: inline-block;
           font-size: 30px; }
-      .informations__container .col_droite table td {
-        vertical-align: top; }
-        .informations__container .col_droite table td .cellule_gauche {
-          width: 150px;
-          display: flex;
-          margin-top: 20px; }
-          .informations__container .col_droite table td .cellule_gauche p {
-            margin: 0 0 0 10px; }
-        .informations__container .col_droite table td .cellule_droite h1 {
-          margin: 20px 0 5px 0;
-          font-size: 25px; }
-        .informations__container .col_droite table td .cellule_droite h2 {
-          margin: 5px 0 5px 0;
-          font-size: 20px; }
-        .informations__container .col_droite table td .cellule_droite p {
-          margin: 5px 0 5px 0;
-          font-size: 15px; }
+      .informations__container .col_droite table {
+        /*contenu du tableau*/ }
+        .informations__container .col_droite table td {
+          vertical-align: top; }
+          .informations__container .col_droite table td .cellule_gauche {
+            width: 150px;
+            display: flex;
+            margin-top: 20px; }
+            .informations__container .col_droite table td .cellule_gauche p {
+              margin: 0 0 0 15px;
+              font-family: "Baloo 2", cursive;
+              font-weight: 600;
+              line-height: 20px; }
+          .informations__container .col_droite table td .cellule_droite h1 {
+            margin: 20px 0 5px 0;
+            font-size: 30px;
+            font-family: "Baloo 2", cursive;
+            font-weight: 600;
+            line-height: 20px; }
+          .informations__container .col_droite table td .cellule_droite h2 {
+            margin: 5px 0 5px 0;
+            font-size: 20px;
+            font-family: "Baloo 2", cursive;
+            font-weight: 500; }
+          .informations__container .col_droite table td .cellule_droite p {
+            margin: 5px 0 5px 0;
+            font-size: 15px;
+            font-family: "Baloo 2", cursive;
+            font-weight: 400; }
       .informations__container .col_droite .recommandation {
         width: 100%; }
         .informations__container .col_droite .recommandation td {
           width: 50%;
           text-align: left; }
+        .informations__container .col_droite .recommandation h1 {
+          margin: 20px 0 5px 0;
+          font-size: 25px;
+          font-family: "Baloo 2", cursive;
+          font-weight: 600;
+          line-height: 20px; }
+        .informations__container .col_droite .recommandation h2 {
+          margin: 5px 0 5px 0;
+          font-size: 20px;
+          font-family: "Baloo 2", cursive;
+          font-weight: 500; }
+        .informations__container .col_droite .recommandation p {
+          margin: 5px 0 5px 0;
+          font-size: 15px;
+          font-family: "Baloo 2", cursive;
+          font-weight: 400; }
 
 /*Mise en forme des icones*/
 .icones {
@@ -166,7 +211,7 @@ header {
 .dot {
   /*puces*/
   font-size: 10px;
-  margin-top: 3px;
+  margin-top: 4px;
   color: #1196C5; }
 
 /*body{

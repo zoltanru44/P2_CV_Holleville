@@ -1,7 +1,23 @@
 /* Scss Document */
 $clr_primary:#1196C5;
-$font_style_titre:  Arial, "sans-serif";
-$font_style_texte: "sans-serif";
+$font_style_titre:  'Karla', sans-serif;
+$font_style_texte: 'Baloo 2', cursive;
+
+/*Polices de style*/
+/*pour les appeler :
+
+    
+    font-family: 'Baloo Bhaina 2', cursive;
+
+    font-family: 'Karla', sans-serif; (400 et 700)
+
+    font-family: 'Didact Gothic', sans-serif;
+
+    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)
+
+
+
+*/
 
 
 /*enlever le surlignage de "mark"*/
@@ -77,11 +93,11 @@ header {
         margin: 0 0 50px 0;
         font-family: $font_style_titre;
         text-indent: 60px;
-        & mark{
-            /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/
-            border-bottom: 1.2px solid $clr_primary;
+         }
+    & h2::before{
+            content:"Devel";
+            border-bottom: 1.2px solid $clr_primary;  /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/
         }
-                     }
 }
 /*bloc général des deux colonnes*/
 .informations{
@@ -104,23 +120,27 @@ header {
             color: $clr_primary;
             background-color: black;
             font-family: $font_style_titre;
+                
             }
             &__infos{ /*text d'info parie gauche*/
                  margin: 10px ;
                 text-align: justify;
                 font-size: 17px;
+                font-family: $font_style_texte;
+                font-weight: 500;
+                line-height: 20px;
                 & .apropos{/*cas "A propos" qui est plus grande*/
                     height: 550px;
+                    text-align: justify;
                 }
-                & .loisir_pict{
-                    height: 50px;
-                    width: auto;
-                    margin: 5px;
-                    border-radius: 50%;
-                    color: $clr-primary;
+                & .loisir{
+                    display: flex; 
+                    justify-content: space-between;
+                    padding: 0;
+                    margin: 0;
                 }
-            }
-            
+                
+            }   
         }
         /*colonne de droite*/
         & .col_droite{
@@ -128,24 +148,18 @@ header {
             margin-left: 40px;
             
                 &__title{
-            border-bottom:2px solid $clr-primary ;
-            height: 70px;
-        
-        &__logo{
-            display: inline-block;
-            height: 30%;
-            width: auto;
-            margin-right: 2%;
-            color: $clr-primary;
-        }
-        
-        & h2{
-            display: inline-block;
-            font-size: 30px;
+                    border-bottom:2px solid $clr-primary ;
+                    height: 70px;
+                    font-family: $font_style_titre;
+                    font-weight: 700;
+                    margin: 10px 0 10px 0;
+                    & h2{ /*titres des rubriques*/
+                        display: inline-block;
+                        font-size: 30px;
                 
         }
     }
-    & table{
+    & table{ /*contenu du tableau*/
         & td{
             vertical-align: top;
             
@@ -155,41 +169,66 @@ header {
                 margin-top: 20px;
                 
                 & p{
-                    margin: 0 0 0 10px;
-                    
-                    
+                    margin: 0 0 0 15px;
+                    font-family: $font_style_texte;
+                    font-weight: 600;  
+                    line-height: 20px;
                 }
-                
-            }
+             }
             & .cellule_droite{
                 
                 & h1{
                     margin: 20px 0 5px 0;
-                    font-size: 25px;
+                    font-size: 30px;
+                    font-family: $font_style_texte;
+                    font-weight: 600;
+                    line-height: 20px;
             }
                 & h2{
                     margin: 5px 0 5px 0;
                     font-size: 20px;
+                    font-family: $font_style_texte;
+                    font-weight: 500;
             }
                 & p{
                     margin: 5px 0 5px 0;
                     font-size: 15px;
+                    font-family: $font_style_texte;
+                    font-weight: 400;
                 
             }
-            
-            }
-            
-            
+          }
         }
-        
-        }
+      }
         
     & .recommandation{
         width: 100%;
+        
             & td{
                
                 width: 50%;
                 text-align: left;
+            }
+                 & h1{
+                    margin: 20px 0 5px 0;
+                    font-size: 25px;
+                    font-family: $font_style_texte;
+                    font-weight: 600;
+                    line-height: 20px;
+                     
+            }
+                & h2{
+                    margin: 5px 0 5px 0;
+                    font-size: 20px;
+                    font-family: $font_style_texte;
+                    font-weight: 500;
+            }
+                & p{
+                    margin: 5px 0 5px 0;
+                    font-size: 15px;
+                    font-family: $font_style_texte;
+                    font-weight: 400;
+                
             }
     }
             }
@@ -219,7 +258,7 @@ header {
 
 .dot{ /*puces*/
     font-size:10px;
-    margin-top: 3px;
+    margin-top: 4px;
     color: $clr-primary;
     
     
