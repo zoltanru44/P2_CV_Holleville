@@ -42,35 +42,7 @@ header {
     margin: 50px 50px 20px 50px; /* 30px pour permettre d'intégrer la barre de navigation*/
     }
 }
-/*Options du navigateur*/
-.nav{
-    background-color: $clr_primary;
-    position: absolute;
-    width: 250px;
-    height: 25px;
-    top: 233px;
-    
-    
-    &__ul{ /*bloc des trois items*/
-        display:flex;
-        justify-content: space-around;
-        padding: 0;
-        margin: 0;
-              }
-    &__link{
-        list-style-type: none; /*enlève les puces*/
-        font-size: 20px;
-        /*margin: 0 10px 0 10px;*/
-        
-        
-                }
-    &__link a{ /*permet de mettre les lien en noir et sans surlignage*/
-        text-decoration: none;
-        color: white;
-        
-    }
-    
-}/*partie droite du bandeau*/
+/*partie droite du bandeau*/
 .presentation{
     
     width: 100%;
