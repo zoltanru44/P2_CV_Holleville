@@ -1,5 +1,5 @@
 /* Scss Document */
-$clr_primary:#1196C5;
+$clr_primary:#1E88E5;
 $font_style_titre:  'Karla', sans-serif;
 $font_style_texte: 'Baloo 2', cursive;
 
@@ -24,30 +24,30 @@ header {
     height: 250px;
 }
 .profil{ /*bandeau d'entête*/
-    width: 250px;
+    width: 30%;
     height: 250px;
     background-color: $clr_primary;
     
     &__picture{ /*image de profil*/
-    width: 150px;
-    height: auto;
-    overflow: hidden;
-    border-radius: 50%;
+        display: block;
+        width: 200px;
+        height: auto;
+        overflow: hidden;
+        border-radius: 50%;
         box-shadow: 0px 0px 20px darken($clr-primary, 50%);
-    margin: 50px 50px 20px 50px; /* 30px pour permettre d'intégrer la barre de navigation*/
+        margin: 25px auto 25px auto; 
     }
 }
 /*partie droite du bandeau*/
 .presentation{
     
-    width: 100%;
+    width: 70%;
     
        
      & h1 {
         font-size: 50px;
-        margin: 75px 75px auto auto;
+        margin: 2em 0 0 8vw;
         font-family: $font_style_titre;
-         text-indent: 50px;
          text-shadow: 1px 1px 0.5px black;
          
          
@@ -57,9 +57,9 @@ header {
     }
     & h2{
         font-size: 20px;
-        margin: 0 0 50px 0;
+        margin: 0 0 0 10vw;
         font-family: $font_style_titre;
-        text-indent: 60px;
+        
          }
     & h2::before{
             content:"Devel";
@@ -69,76 +69,90 @@ header {
 /*bloc général des deux colonnes*/
 .informations{
      margin: 0;
+    
     &__container{
         /*colonne de gauche*/
        display: flex;
 
         & .col_gauche {
-            width: 250px;
+            width: 30%;
             background-color: $clr-primary;
+            position: relative;
+           
                         
             
             & h1{ /*titres surlignés en noir*/
-            margin-top: 0;
+            
             text-align: center;
             text-transform: uppercase;
             color: $clr_primary;
             background-color: black;
             font-family: $font_style_titre;
+            line-height: 1.5em;
+            margin: 0;
                 
             }
             &__infos{ /*text d'info parie gauche*/
-                 margin: 10px ;
+                 margin: 2em 1em ;
                 text-align: justify;
                 font-size: 17px;
                 font-family: $font_style_texte;
                 font-weight: 500;
                 line-height: 20px;
                 & .apropos{/*cas "A propos" qui est plus grande*/
-                    height: 550px;
+                    height: 35em;
                     text-align: justify;
                 }
-                & .loisir{
+                                
+            }   
+        }  
+        .loisir{
+                    height: 6em;
+                    line-height: 6em;
+                    margin: 0;
+                    padding: 0 2vw;
                     display: flex; 
                     justify-content: space-between;
-                    padding: 0;
-                    margin: 0;
+                    background-color: $clr_primary;
+            
                 }
-                
-            }   
+        .conteneur_loisir{
+            position: absolute;
+            bottom: 0;
+            width: 100%
         }
+        
         /*colonne de droite*/
         & .col_droite{
             width: 60%;
-            margin: 0 0 0 40px;
+            margin: 0 0 0 5vw;
             
             
                 &__title{
                     border-bottom:2px solid $clr-primary ;
-                    height: 60px;
                     font-family: $font_style_titre;
                     font-weight: 700;
-                    margin: 0 0 10px 0;
+                    margin: 1em 0 1em 0;
                     display: flex;
                     align-items: center;
                     
                     & h2{ /*titres des rubriques*/
                         display: inline-block;
-                        font-size: 30px;
-                
+                        font-size: 30px;    
         }
     }
     & table{ /*contenu du tableau*/
+        margin-bottom: 2em;
         & td{
             vertical-align: top;
             
             & .cellule_gauche{
-                width: 150px;
+                width: 15vw;
                 display: flex;
                 margin-top: 20px;
                 
                 & p{
-                    margin: 0 0 0 15px;
+                    margin: 0 0 0 1.5em;
                     font-family: $font_style_texte;
                     font-weight: 600;  
                     line-height: 20px;
@@ -147,23 +161,25 @@ header {
             & .cellule_droite{
                 
                 & h1{
-                    margin: 20px 0 5px 0;
+                    margin: 0.5em 0 0.3em 0;
                     font-size: 30px;
                     font-family: $font_style_texte;
                     font-weight: 600;
-                    line-height: 20px;
+                    line-height: 1em;
             }
                 & h2{
-                    margin: 5px 0 5px 0;
+                    margin: 0.3em 0 0.3em 0;
                     font-size: 20px;
                     font-family: $font_style_texte;
                     font-weight: 500;
+                    line-height: 1em;
             }
                 & p{
-                    margin: 5px 0 5px 0;
+                    margin: 0.3em 0 0.3em 0;
                     font-size: 15px;
                     font-family: $font_style_texte;
                     font-weight: 400;
+                    line-height: 1em;
                 
             }
           }
@@ -179,7 +195,7 @@ header {
                 text-align: left;
             }
                  & h1{
-                    margin: 20px 0 5px 0;
+                    margin: 0.5em 0 0.3em 0;
                     font-size: 25px;
                     font-family: $font_style_texte;
                     font-weight: 600;
@@ -187,13 +203,13 @@ header {
                      
             }
                 & h2{
-                    margin: 5px 0 5px 0;
+                    margin: 0.3em 0 0.3em 0;
                     font-size: 20px;
                     font-family: $font_style_texte;
                     font-weight: 500;
             }
                 & p{
-                    margin: 5px 0 5px 0;
+                    margin: 0.3em 0 0.3em 0;
                     font-size: 15px;
                     font-family: $font_style_texte;
                     font-weight: 400;
@@ -208,13 +224,15 @@ header {
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
     display: inline;
+    justify-content: space-between;
     
         &__gauche{ /*Icones dans un cercle*/
-            font-size: 40px; /*taille icones*/
-            margin: 0 5px;
-            padding: 5px; /*permet d'avoir de l'espace dans le cercle*/
+            margin: 0 1vw;
+            font-size: 3em; /*taille icones*/
+            padding: 0.1em; /*permet d'avoir de l'espace dans le cercle*/
             text-align: center;
-            border: 1px solid black;
+            vertical-align: middle;
+            border: 2px solid black;
             border-radius: 50%;
             overflow: hidden; /* permet d'enlever ce qui dépasse*/
     }
@@ -227,9 +245,8 @@ header {
 
 .dot{ /*puces*/
     font-size:10px;
-    margin-top: 4px;
+    margin-top: 0.3em;
     color: $clr-primary;
-    
     
 }
 

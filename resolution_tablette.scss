@@ -1,2 +1,27 @@
 /* Scss Document */
 
+$clr_primary:#1E88E5;
+
+.profil{ /*bandeau d'entête*/
+    
+    
+    &__picture{ /*image de profil*/
+        display: flex;
+        width: 20vw;
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/*Mise en forme des icones*/
+.icones{  /*icones loisirs*/
+    
+    
+        &__gauche{ /*Icones dans un cercle*/
+            margin: 0 1vw;
+            font-size: 5vw; /*taille icones*/
+            padding: 1vm; /*permet d'avoir de l'espace dans le cercle*/
+           
+    }
+     
+    } 
