@@ -3,14 +3,15 @@
 $clr_primary:#1E88E5;
 
 .profil{ /*bandeau d'entête*/
-    
+   
     
     &__picture{ /*image de profil*/
         display: flex;
         width: 20vw;
-        
-        flex-direction: column;
+        height: 20vw;
+         align-items: center;
         justify-content: center;
+        
     }
 }
 /*Mise en forme des icones*/

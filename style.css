@@ -30,7 +30,7 @@ header {
     /*image de profil*/
     display: block;
     width: 200px;
-    height: auto;
+    height: 200px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 0px 20px #000204;

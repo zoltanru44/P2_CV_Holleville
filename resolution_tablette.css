@@ -6,7 +6,8 @@
     /*image de profil*/
     display: flex;
     width: 20vw;
-    flex-direction: column;
+    height: 20vw;
+    align-items: center;
     justify-content: center; }
 
 /*Mise en forme des icones*/
