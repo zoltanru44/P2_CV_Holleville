@@ -9,15 +9,11 @@ header {
 .profil {
   /*bandeau d'entête*/
   width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: 200px; }
   .profil__picture {
     /*image de profil*/
     width: 150px;
-    height: 150px;
-    margin: 0; }
+    height: 150px; }
 
 /*partie droite du bandeau*/
 .presentation {
@@ -32,7 +28,7 @@ header {
     margin: 0; }
 
 /*correction du nom si écran plus petit que 473px*/
-@media screen and (max-width: 473px) {
+@media screen and (max-width: 422px) {
   header {
     height: 350px; }
 
@@ -43,7 +39,7 @@ header {
   margin: 0; }
   .informations__container {
     /*colonne de gauche-fin*/
-    flex-direction: column-reverse;
+    flex-direction: column;
     /*colonne de droite -Début*/ }
     .informations__container .col_gauche {
       width: 100%; }
@@ -80,7 +76,7 @@ header {
         width: 100%; }
         .informations__container .col_droite table tr .cellule_gauche {
           width: 15vw;
-          margin: 1em 2em 0 2em; }
+          margin: 1em 2em 0 0; }
         .informations__container .col_droite table tr .cellule_droite {
           margin-right: 5vw; }
           .informations__container .col_droite table tr .cellule_droite h1 {

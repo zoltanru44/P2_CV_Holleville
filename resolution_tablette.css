@@ -4,11 +4,8 @@
   /*bandeau d'entête*/ }
   .profil__picture {
     /*image de profil*/
-    display: flex;
     width: 20vw;
-    height: 20vw;
-    align-items: center;
-    justify-content: center; }
+    height: 20vw; }
 
 /*Mise en forme des icones*/
 .icones {
