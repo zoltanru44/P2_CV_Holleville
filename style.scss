@@ -49,7 +49,7 @@ header {
        
      & h1 {
         font-size: 50px;
-        margin: 2em 0 0 8vw;
+        margin: 2em 0 0 10%;
         font-family: $font_style_titre;
          text-shadow: 1px 1px 0.5px black;
          
@@ -60,7 +60,7 @@ header {
     }
     & h2{
         font-size: 20px;
-        margin: 0 0 0 10vw;
+        margin: 0 0 0 15%;
         font-family: $font_style_titre;
         
          }
@@ -111,13 +111,13 @@ header {
                     height: 6em;
                     line-height: 6em;
                     margin: 0;
-                    padding: 0 2vw;
                     display: flex; 
-                    justify-content: space-between;
+                    justify-content: center;
+            align-items: center;
                     background-color: $clr_primary;
             
                 }
-        .conteneur_loisir{
+        .conteneur_loisir{ /*permet de placer "loisir" en bas*/
             position: absolute;
             bottom: 0;
             width: 100%
@@ -126,7 +126,7 @@ header {
         /*colonne de droite*/
         & .col_droite{
             width: 60%;
-            margin: 0 0 0 5vw;
+            margin: 0 0 0 5%;
             
             
                 &__title{
@@ -187,17 +187,15 @@ header {
 }
 tr{ /*aligne les col droite et gauche*/
     display: flex;
-    width: 60vw
+    width: 100%;
 }
 tbody{
             width: 100%
         }
-        td{ /*aligne le dot et la date*/
+        td{ 
             
-            
- 
             &.cellule_gauche{
-                display: flex;
+                display: flex;/*aligne le dot et la date*/
                 width: 30%;
                 margin-top: 20px;
                 align-items: flex-start;
@@ -242,17 +240,14 @@ tbody{
       }
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
-    display: inline;
-    justify-content: space-between;
+      
     
         &__gauche{ /*Icones dans un cercle*/
-            margin: 0 1vw;
-            font-size: 3em; /*taille icones*/
-            padding: 0.1em; /*permet d'avoir de l'espace dans le cercle*/
-            text-align: center;
-            vertical-align: middle;
+            margin: 2%;
+            font-size: 300%; /*taille icones*/
+            padding: 2%; /*permet d'avoir de l'espace dans le cercle*/
             border: 2px solid black;
-            border-radius: 50%;
+            border-radius: 100%;
             overflow: hidden; /* permet d'enlever ce qui dépasse*/
     }
         &__droites{ /*icones de droite*/

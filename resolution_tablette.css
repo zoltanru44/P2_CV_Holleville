@@ -6,14 +6,3 @@
     /*image de profil*/
     width: 20vw;
     height: 20vw; }
-
-/*Mise en forme des icones*/
-.icones {
-  /*icones loisirs*/ }
-  .icones__gauche {
-    /*Icones dans un cercle*/
-    margin: 0 1vw;
-    font-size: 5vw;
-    /*taille icones*/
-    padding: 1vw;
-    /*permet d'avoir de l'espace dans le cercle*/ }

@@ -42,14 +42,14 @@ header {
   width: 70%; }
   .presentation h1 {
     font-size: 50px;
-    margin: 2em 0 0 8vw;
+    margin: 2em 0 0 10%;
     font-family: "Karla", sans-serif;
     text-shadow: 1px 1px 0.5px black; }
     .presentation h1 mark {
       color: #1E88E5; }
   .presentation h2 {
     font-size: 20px;
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 15%;
     font-family: "Karla", sans-serif; }
   .presentation h2::before {
     content: "Devel";
@@ -90,17 +90,18 @@ header {
     height: 6em;
     line-height: 6em;
     margin: 0;
-    padding: 0 2vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background-color: #1E88E5; }
   .informations__container .conteneur_loisir {
+    /*permet de placer "loisir" en bas*/
     position: absolute;
     bottom: 0;
     width: 100%; }
   .informations__container .col_droite {
     width: 60%;
-    margin: 0 0 0 5vw; }
+    margin: 0 0 0 5%; }
     .informations__container .col_droite__title {
       border-bottom: 2px solid #1E88E5;
       font-family: "Karla", sans-serif;
@@ -142,63 +143,58 @@ table {
 tr {
   /*aligne les col droite et gauche*/
   display: flex;
-  width: 60vw; }
+  width: 100%; }
 
 tbody {
   width: 100%; }
 
-td {
-  /*aligne le dot et la date*/ }
-  td.cellule_gauche {
-    display: flex;
-    width: 30%;
-    margin-top: 20px;
-    align-items: flex-start; }
-    td.cellule_gauche p {
-      display: block;
-      margin: 0 0 0 1em;
-      font-family: "Baloo 2", cursive;
-      font-weight: 600;
-      line-height: 20px; }
-  td.cellule_droite {
-    width: 80%;
-    display: flex;
-    flex-direction: column; }
-    td.cellule_droite h2 {
-      margin: 0.5em 0 0.3em 0;
-      font-size: 30px;
-      font-family: "Baloo 2", cursive;
-      font-weight: 600;
-      line-height: 1em; }
-    td.cellule_droite h3 {
-      margin: 0.3em 0 0.3em 0;
-      font-size: 20px;
-      font-family: "Baloo 2", cursive;
-      font-weight: 500;
-      line-height: 1em; }
-    td.cellule_droite p {
-      margin: 0.3em 0 0.3em 0;
-      font-size: 15px;
-      font-family: "Baloo 2", cursive;
-      font-weight: 400;
-      line-height: 1em; }
+td.cellule_gauche {
+  display: flex;
+  /*aligne le dot et la date*/
+  width: 30%;
+  margin-top: 20px;
+  align-items: flex-start; }
+  td.cellule_gauche p {
+    display: block;
+    margin: 0 0 0 1em;
+    font-family: "Baloo 2", cursive;
+    font-weight: 600;
+    line-height: 20px; }
+td.cellule_droite {
+  width: 80%;
+  display: flex;
+  flex-direction: column; }
+  td.cellule_droite h2 {
+    margin: 0.5em 0 0.3em 0;
+    font-size: 30px;
+    font-family: "Baloo 2", cursive;
+    font-weight: 600;
+    line-height: 1em; }
+  td.cellule_droite h3 {
+    margin: 0.3em 0 0.3em 0;
+    font-size: 20px;
+    font-family: "Baloo 2", cursive;
+    font-weight: 500;
+    line-height: 1em; }
+  td.cellule_droite p {
+    margin: 0.3em 0 0.3em 0;
+    font-size: 15px;
+    font-family: "Baloo 2", cursive;
+    font-weight: 400;
+    line-height: 1em; }
 
 /*Mise en forme des icones*/
 .icones {
-  /*icones loisirs*/
-  display: inline;
-  justify-content: space-between; }
+  /*icones loisirs*/ }
   .icones__gauche {
     /*Icones dans un cercle*/
-    margin: 0 1vw;
-    font-size: 3em;
+    margin: 2%;
+    font-size: 300%;
     /*taille icones*/
-    padding: 0.1em;
+    padding: 2%;
     /*permet d'avoir de l'espace dans le cercle*/
-    text-align: center;
-    vertical-align: middle;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 100%;
     overflow: hidden;
     /* permet d'enlever ce qui dépasse*/ }
   .icones__droites {
