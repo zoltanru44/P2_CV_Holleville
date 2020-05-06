@@ -57,7 +57,9 @@ header {
           text-align: center; }
           .informations__container .col_gauche__infos .apropos p {
             text-align: justify;
-            text-align-last: center; }
+            text-align-last: center;
+            /*permet de justifier le texte et centrer la dernière ligne*/
+            padding: 0 2%; }
     .informations__container .loisir {
       height: 5em;
       line-height: 5em;

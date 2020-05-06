@@ -11,18 +11,16 @@ header {
 .profil{ /*bandeau d'entête*/
     width: 100%;
     height: 200px;
-    
     &__picture{ /*image de profil*/
-    width: 150px;
-    height: 150px;
-       
+        width: 150px;
+        height: 150px; 
     }
 }
 /*partie droite du bandeau*/
 .presentation{
     width: 100%;
     height: 100px;   
-     & h1 {
+    & h1 {
         font-size: 50px;
         margin: 0;
         text-align: center;
@@ -37,14 +35,13 @@ header {
     header{
         height: 350px;
     }
-    .presentation{
-        
+    .presentation{  
         height: 150px;
     }
 }
 /*bloc général des deux colonnes*/
 .informations{
-     margin: 0;
+    margin: 0;
     &__container{
         /*colonne de gauche-fin*/
         flex-direction: column; 
@@ -54,7 +51,7 @@ header {
                 margin: 0;
             }
             &__infos{ /*text d'info partie gauche*/
-                 margin: auto ;
+                margin: auto ;
                 text-align: center;
                 font-size: 20px;
                 line-height: 22px;
@@ -63,19 +60,20 @@ header {
                     text-align: center;
                     & p{
                         text-align: justify;
-                        text-align-last: center;
+                        text-align-last: center; /*permet de justifier le texte et centrer la dernière ligne*/
+                        padding: 0 2%;
                     }
                 } 
             }   
         }
-    .loisir{
-                    height: 5em;
-                    line-height: 5em;
-                    margin: auto;
-                    padding: 0 7vw;
-                    display: flex; 
-                    justify-content: space-between;     
-                }
+        .loisir{
+            height: 5em;
+            line-height: 5em;
+            margin: auto;
+            padding: 0 7vw;
+            display: flex; 
+            justify-content: space-between;     
+        }
         .conteneur_loisir{
             position: relative;
             bottom: 0;
@@ -84,68 +82,61 @@ header {
         /*colonne de droite -Début*/
         & .col_droite{
             width: 100%;
-               margin: auto;
+            margin: auto;
                 &__title{               
                     margin: 0 2em 1em 2em; 
                     & .title_recommandation{
                         font-size: 27px;
                     }
-    }
-  
-    & .recommandation{
+                }
+            & .recommandation{
                 & td{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
                     align-items: center;
-            }
-                 & h2{
-                    margin: 0.5em 0 0.3em 0;
-                    font-size: 25px;
-                    font-family: $font_style_texte;
-                    font-weight: 600;
-                    line-height: 20px;
-                     
-            }
-                & h3{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 20px;
-                    font-family: $font_style_texte;
-                    font-weight: 500;
-            }
-                & p{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 15px;
-                    font-family: $font_style_texte;
-                    font-weight: 400;
-                
-            }
+                }
+                & h2{
+                  margin: 0.5em 0 0.3em 0;
+                  font-size: 25px;
+                  font-family: $font_style_texte;
+                  font-weight: 600;
+                  line-height: 20px;             
+              }
+              & h3{
+                  margin: 0.3em 0 0.3em 0;
+                  font-size: 20px;
+                  font-family: $font_style_texte;
+                  font-weight: 500;
+              }
+              & p{
+                  margin: 0.3em 0 0.3em 0;
+                  font-size: 15px;
+                  font-family: $font_style_texte;
+                  font-weight: 400;          
+              }
+          }
+       }      
     }
-            }      
-        }
-    }
+}
 table tr td {
     display: block;
 }
 tbody{
   width: 100%;
 }
-    table{ /*contenu du tableau*/
+table{ /*contenu du tableau*/
+    width: 100%;    
+    & tr{
         width: 100%;
-        
-            
-        & tr{
-            width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & td{
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            & td{
-                display: flex;
-               justify-content: center;
-                width: 100%;
-                
-            
+            width: 100%;         
             &.cellule_gauche{
                 justify-content: center;
                 margin: 1em  0 0; 
@@ -158,8 +149,7 @@ tbody{
                 }
              }
             &.cellule_droite{
-                width: 100%;
-                
+                width: 100%;      
                 & h2{
                     text-align: center;
             }
@@ -168,23 +158,21 @@ tbody{
             }
                 & p{
                     text-align: center;  
-                }}
-          }
-        }
-      }         
-        
-
+               }
+            }
+         }
+      }
+   }         
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
     display: inline;
-    
         &__gauche{ /*Icones dans un cercle*/
             font-size: 8vw; /*taille icones*/
             margin: 0 1vw;
             padding: 0.2em; /*permet d'avoir de l'espace dans le cercle*/
             border: 3px solid black;     
         }  
-    } 
+} 
 
 
 

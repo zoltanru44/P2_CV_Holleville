@@ -12,9 +12,8 @@ $font_style_texte: 'Baloo 2', cursive;
 
     font-family: 'Didact Gothic', sans-serif;
 
-    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)
+    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)*/
 
-*/
 /*enlever le surlignage de "mark"*/
 mark{
     background-color: transparent;
@@ -29,31 +28,23 @@ header {
     background-color: $clr_primary;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    &__picture{ /*image de profil*/
-        
+    align-items: center;  
+    &__picture{ /*image de profil*/   
         width: 200px;
         height: 200px;
         overflow: hidden;
         border-radius: 50%;
         box-shadow: 0px 0px 20px darken($clr-primary, 50%);
-        
     }
 }
 /*partie droite du bandeau*/
 .presentation{
-    
-    width: 70%;
-    
-       
-     & h1 {
+    width: 70%;   
+    & h1 {
         font-size: 50px;
         margin: 2em 0 0 10%;
         font-family: $font_style_titre;
-         text-shadow: 1px 1px 0.5px black;
-         
-         
+        text-shadow: 1px 1px 0.5px black;       
         & mark{
             color: $clr_primary;
         }
@@ -61,210 +52,176 @@ header {
     & h2{
         font-size: 20px;
         margin: 0 0 0 15%;
-        font-family: $font_style_titre;
-        
-         }
+        font-family: $font_style_titre;       
+    }
     & h2::before{
-            content:"Devel";
-            border-bottom: 1.2px solid $clr_primary;  /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/
-        }
+        content:"Devel";
+        border-bottom: 1.2px solid $clr_primary;  /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/
+    }
 }
 /*bloc général des deux colonnes*/
 .informations{
     &__container{
         /*colonne de gauche*/
        display: flex;
-
         & .col_gauche {
             width: 30%;
             background-color: $clr-primary;
-            position: relative;
-           
-                        
-            
-            & h2{ /*titres surlignés en noir*/
-            
+            position: relative;      
+            & h2{ /*titres surlignés en noir*/         
             text-align: center;
             text-transform: uppercase;
             color: $clr_primary;
             background-color: black;
             font-family: $font_style_titre;
             line-height: 1.5em;
-            margin: 0;
-                
+            margin: 0;            
             }
             &__infos{ /*textes d'info partie gauche*/
-                 margin: 2em 1em ;
-                 font-size: 17px;
+                margin: 2em 1em ;
+                font-size: 100%;
                 font-family: $font_style_texte;
                 font-weight: 500;
-                line-height: 20px;
-                
+                line-height: 20px;            
                 & .apropos{/*cas "A propos" qui est plus grande*/
-                    height: 35em;
-                    
+                    height: 35em;            
                     & p{
-                        text-align: justify;
+                    text-align: justify;
                     }
-                }
-                                
+                }                    
             }   
         }  
         .loisir{
-                    height: 6em;
-                    line-height: 6em;
-                    margin: 0;
-                    display: flex; 
-                    justify-content: center;
+            height: 6em;
+            line-height: 6em;
+            margin: 0;
+            display: flex; 
+            justify-content: center;
             align-items: center;
-                    background-color: $clr_primary;
-            
-                }
+            background-color: $clr_primary;    
+        }
         .conteneur_loisir{ /*permet de placer "loisir" en bas*/
             position: absolute;
             bottom: 0;
             width: 100%
-        }
-        
+        }  
         /*colonne de droite*/
         & .col_droite{
             width: 60%;
-            margin: 0 0 0 5%;
-            
-            
+            margin: 0 0 0 5%;    
                 &__title{
                     border-bottom:2px solid $clr-primary ;
                     font-family: $font_style_titre;
                     font-weight: 700;
                     margin: 1em 0 1em 0;
                     display: flex;
-                    align-items: center;
-                    
+                    align-items: center;              
                     & h2{ /*titres des rubriques*/
                         display: inline-block;
                         font-size: 30px;    
+                    }
+                }     
+                & .recommandation{
+                  width: 100%;      
+                  & td{            
+                      width: 50%;
+                      text-align: left;
+                  }
+                  & h2{
+                      margin: 0.5em 0 0.3em 0;
+                      font-size: 25px;
+                      font-family: $font_style_texte;
+                      font-weight: 600;
+                      line-height: 20px;                
+                  }
+                  & h3{
+                      margin: 0.3em 0 0.3em 0;
+                      font-size: 20px;
+                      font-family: $font_style_texte;
+                      font-weight: 500;
+                  }
+                  & p{
+                      margin: 0.3em 0 0.3em 0;
+                      font-size: 15px;
+                      font-family: $font_style_texte;
+                      font-weight: 400;          
+                  }
+              }
+           }   
         }
     }
-            
-  
-        
-    & .recommandation{
-        width: 100%;
-        
-            & td{
-               
-                width: 50%;
-                text-align: left;
-            }
-                 & h2{
-                    margin: 0.5em 0 0.3em 0;
-                    font-size: 25px;
-                    font-family: $font_style_texte;
-                    font-weight: 600;
-                    line-height: 20px;
-                     
-            }
-                & h3{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 20px;
-                    font-family: $font_style_texte;
-                    font-weight: 500;
-            }
-                & p{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 15px;
-                    font-family: $font_style_texte;
-                    font-weight: 400;
-                
-            }
-    }
-            }
-            
-        }
-    }
-       table{ /*contenu du tableau*/
-        margin-bottom: 2em;
-        display: flex;
-        
-           
+table{ /*contenu du tableau*/
+    margin-bottom: 2em;
+    display: flex;     
 }
 tr{ /*aligne les col droite et gauche*/
     display: flex;
     width: 100%;
 }
 tbody{
-            width: 100%
+    width: 100%
+}
+td{  
+   &.cellule_gauche{
+        display: flex;/*aligne le dot et la date*/
+        width: 30%;
+        margin-top: 20px;
+        align-items: flex-start; 
+        & p{
+            display: block;
+            margin: 0 0 0 1em;
+            font-family: $font_style_texte;
+            font-weight: 600;  
+            line-height: 20px;
         }
-        td{ 
-            
-            &.cellule_gauche{
-                display: flex;/*aligne le dot et la date*/
-                width: 30%;
-                margin-top: 20px;
-                align-items: flex-start;
-                
-                & p{
-                    display: block;
-                    margin: 0 0 0 1em;
-                    font-family: $font_style_texte;
-                    font-weight: 600;  
-                    line-height: 20px;
-                }
-             }
-            &.cellule_droite{
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                
-                & h2{
-                    margin: 0.5em 0 0.3em 0;
-                    font-size: 30px;
-                    font-family: $font_style_texte;
-                    font-weight: 600;
-                    line-height: 1em;
-            }
-                & h3{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 20px;
-                    font-family: $font_style_texte;
-                    font-weight: 500;
-                    line-height: 1em;
-            }
-                & p{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 15px;
-                    font-family: $font_style_texte;
-                    font-weight: 400;
-                    line-height: 1em;
-                
-            }
-          }
-        
-      }
+    }
+    &.cellule_droite{
+        width: 80%;
+        display: flex;
+        flex-direction: column;       
+        & h2{
+            margin: 0.5em 0 0.3em 0;
+            font-size: 30px;
+            font-family: $font_style_texte;
+            font-weight: 600;
+            line-height: 1em;
+        }
+        & h3{
+            margin: 0.3em 0 0.3em 0;
+            font-size: 20px;
+            font-family: $font_style_texte;
+            font-weight: 500;
+            line-height: 1em;
+        }
+        & p{
+            margin: 0.3em 0 0.3em 0;
+            font-size: 15px;
+            font-family: $font_style_texte;
+            font-weight: 400;
+            line-height: 1em;    
+        }
+    }
+}
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
-      
-    
-        &__gauche{ /*Icones dans un cercle*/
-            margin: 2%;
-            font-size: 300%; /*taille icones*/
-            padding: 2%; /*permet d'avoir de l'espace dans le cercle*/
-            border: 2px solid black;
-            border-radius: 100%;
-            overflow: hidden; /* permet d'enlever ce qui dépasse*/
+    &__gauche{ /*Icones dans un cercle*/
+        margin: 2%;
+        font-size: 300%; /*taille icones*/
+        padding: 2%; /*permet d'avoir de l'espace dans le cercle*/
+        border: 2px solid black;
+        border-radius: 100%;
+        overflow: hidden; /* permet d'enlever ce qui dépasse*/
     }
-        &__droites{ /*icones de droite*/
-            font-size: 30px;
-            color: $clr-primary;
-            margin-right: 10px;
-}
-    } 
-
+    &__droites{ /*icones de droite*/
+        font-size: 30px;
+        color: $clr-primary;
+        margin-right: 10px;
+    }
+} 
 .dot{ /*puces*/
     font-size:10px;
     margin-top: 0.3em;
     color: $clr-primary;
-    
 }
 
 

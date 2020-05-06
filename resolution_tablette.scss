@@ -1,14 +1,7 @@
 /* Scss Document */
-
-$clr_primary:#1E88E5;
-
-.profil{ /*bandeau d'entête*/
-   
-    &__picture{ /*image de profil*/
-        
+.profil{ /*bandeau d'entête*/  
+    &__picture{ /*image de profil*/      
         width: 20vw;
         height: 20vw;
-        
-        
     }
 }

@@ -9,9 +9,7 @@
 
     font-family: 'Didact Gothic', sans-serif;
 
-    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)
-
-*/
+    font-family: 'Baloo 2', cursive; (400 regular,500 medium, 600 semi-bold, 700 bold)*/
 /*enlever le surlignage de "mark"*/
 mark {
   background-color: transparent; }
@@ -77,7 +75,7 @@ header {
     .informations__container .col_gauche__infos {
       /*textes d'info partie gauche*/
       margin: 2em 1em;
-      font-size: 17px;
+      font-size: 100%;
       font-family: "Baloo 2", cursive;
       font-weight: 500;
       line-height: 20px; }
