@@ -57,116 +57,131 @@ header {
     /*text-decoration: underline $yellow;* --> espacement trop proche du texte*/ }
 
 /*bloc général des deux colonnes*/
-.informations {
-  margin: 0; }
-  .informations__container {
-    /*colonne de gauche*/
+.informations__container {
+  /*colonne de gauche*/
+  display: flex;
+  /*colonne de droite*/ }
+  .informations__container .col_gauche {
+    width: 30%;
+    background-color: #1E88E5;
+    position: relative; }
+    .informations__container .col_gauche h2 {
+      /*titres surlignés en noir*/
+      text-align: center;
+      text-transform: uppercase;
+      color: #1E88E5;
+      background-color: black;
+      font-family: "Karla", sans-serif;
+      line-height: 1.5em;
+      margin: 0; }
+    .informations__container .col_gauche__infos {
+      /*text d'info parie gauche*/
+      margin: 2em 1em;
+      text-align: justify;
+      font-size: 17px;
+      font-family: "Baloo 2", cursive;
+      font-weight: 500;
+      line-height: 20px; }
+      .informations__container .col_gauche__infos .apropos {
+        /*cas "A propos" qui est plus grande*/
+        height: 35em;
+        text-align: justify; }
+  .informations__container .loisir {
+    height: 6em;
+    line-height: 6em;
+    margin: 0;
+    padding: 0 2vw;
     display: flex;
-    /*colonne de droite*/ }
-    .informations__container .col_gauche {
-      width: 30%;
-      background-color: #1E88E5;
-      position: relative; }
-      .informations__container .col_gauche h1 {
-        /*titres surlignés en noir*/
-        text-align: center;
-        text-transform: uppercase;
-        color: #1E88E5;
-        background-color: black;
-        font-family: "Karla", sans-serif;
-        line-height: 1.5em;
-        margin: 0; }
-      .informations__container .col_gauche__infos {
-        /*text d'info parie gauche*/
-        margin: 2em 1em;
-        text-align: justify;
-        font-size: 17px;
-        font-family: "Baloo 2", cursive;
-        font-weight: 500;
-        line-height: 20px; }
-        .informations__container .col_gauche__infos .apropos {
-          /*cas "A propos" qui est plus grande*/
-          height: 35em;
-          text-align: justify; }
-    .informations__container .loisir {
-      height: 6em;
-      line-height: 6em;
-      margin: 0;
-      padding: 0 2vw;
+    justify-content: space-between;
+    background-color: #1E88E5; }
+  .informations__container .conteneur_loisir {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  .informations__container .col_droite {
+    width: 60%;
+    margin: 0 0 0 5vw; }
+    .informations__container .col_droite__title {
+      border-bottom: 2px solid #1E88E5;
+      font-family: "Karla", sans-serif;
+      font-weight: 700;
+      margin: 1em 0 1em 0;
       display: flex;
-      justify-content: space-between;
-      background-color: #1E88E5; }
-    .informations__container .conteneur_loisir {
-      position: absolute;
-      bottom: 0;
+      align-items: center; }
+      .informations__container .col_droite__title h2 {
+        /*titres des rubriques*/
+        display: inline-block;
+        font-size: 30px; }
+    .informations__container .col_droite .recommandation {
       width: 100%; }
-    .informations__container .col_droite {
-      width: 60%;
-      margin: 0 0 0 5vw; }
-      .informations__container .col_droite__title {
-        border-bottom: 2px solid #1E88E5;
-        font-family: "Karla", sans-serif;
-        font-weight: 700;
-        margin: 1em 0 1em 0;
-        display: flex;
-        align-items: center; }
-        .informations__container .col_droite__title h2 {
-          /*titres des rubriques*/
-          display: inline-block;
-          font-size: 30px; }
-      .informations__container .col_droite table {
-        /*contenu du tableau*/
-        margin-bottom: 2em; }
-        .informations__container .col_droite table td {
-          vertical-align: top; }
-          .informations__container .col_droite table td .cellule_gauche {
-            width: 15vw;
-            display: flex;
-            margin-top: 20px; }
-            .informations__container .col_droite table td .cellule_gauche p {
-              margin: 0 0 0 1.5em;
-              font-family: "Baloo 2", cursive;
-              font-weight: 600;
-              line-height: 20px; }
-          .informations__container .col_droite table td .cellule_droite h1 {
-            margin: 0.5em 0 0.3em 0;
-            font-size: 30px;
-            font-family: "Baloo 2", cursive;
-            font-weight: 600;
-            line-height: 1em; }
-          .informations__container .col_droite table td .cellule_droite h2 {
-            margin: 0.3em 0 0.3em 0;
-            font-size: 20px;
-            font-family: "Baloo 2", cursive;
-            font-weight: 500;
-            line-height: 1em; }
-          .informations__container .col_droite table td .cellule_droite p {
-            margin: 0.3em 0 0.3em 0;
-            font-size: 15px;
-            font-family: "Baloo 2", cursive;
-            font-weight: 400;
-            line-height: 1em; }
-      .informations__container .col_droite .recommandation {
-        width: 100%; }
-        .informations__container .col_droite .recommandation td {
-          width: 50%;
-          text-align: left; }
-        .informations__container .col_droite .recommandation h1 {
-          margin: 0.5em 0 0.3em 0;
-          font-size: 25px;
-          font-family: "Baloo 2", cursive;
-          font-weight: 600;
-          line-height: 20px; }
-        .informations__container .col_droite .recommandation h2 {
-          margin: 0.3em 0 0.3em 0;
-          font-size: 20px;
-          font-family: "Baloo 2", cursive;
-          font-weight: 500; }
-        .informations__container .col_droite .recommandation p {
-          margin: 0.3em 0 0.3em 0;
-          font-size: 15px;
-          font-family: "Baloo 2", cursive;
-          font-weight: 400; }
+      .informations__container .col_droite .recommandation td {
+        width: 50%;
+        text-align: left; }
+      .informations__container .col_droite .recommandation h2 {
+        margin: 0.5em 0 0.3em 0;
+        font-size: 25px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 600;
+        line-height: 20px; }
+      .informations__container .col_droite .recommandation h3 {
+        margin: 0.3em 0 0.3em 0;
+        font-size: 20px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 500; }
+      .informations__container .col_droite .recommandation p {
+        margin: 0.3em 0 0.3em 0;
+        font-size: 15px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 400; }
+
+table {
+  /*contenu du tableau*/
+  margin-bottom: 2em;
+  display: flex; }
+
+tr {
+  /*aligne les col droite et gauche*/
+  display: flex;
+  width: 60vw; }
+
+tbody {
+  width: 100%; }
+
+td {
+  /*aligne le dot et la date*/ }
+  td.cellule_gauche {
+    display: flex;
+    width: 30%;
+    margin-top: 20px;
+    align-items: flex-start; }
+    td.cellule_gauche p {
+      display: block;
+      margin: 0 0 0 1em;
+      font-family: "Baloo 2", cursive;
+      font-weight: 600;
+      line-height: 20px; }
+  td.cellule_droite {
+    width: 80%;
+    display: flex;
+    flex-direction: column; }
+    td.cellule_droite h2 {
+      margin: 0.5em 0 0.3em 0;
+      font-size: 30px;
+      font-family: "Baloo 2", cursive;
+      font-weight: 600;
+      line-height: 1em; }
+    td.cellule_droite h3 {
+      margin: 0.3em 0 0.3em 0;
+      font-size: 20px;
+      font-family: "Baloo 2", cursive;
+      font-weight: 500;
+      line-height: 1em; }
+    td.cellule_droite p {
+      margin: 0.3em 0 0.3em 0;
+      font-size: 15px;
+      font-family: "Baloo 2", cursive;
+      font-weight: 400;
+      line-height: 1em; }
 
 /*Mise en forme des icones*/
 .icones {

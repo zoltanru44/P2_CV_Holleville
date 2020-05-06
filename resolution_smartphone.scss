@@ -50,7 +50,7 @@ header {
         flex-direction: column; 
         & .col_gauche {
             width: 100%; 
-            & h1{
+            & h2{
                 margin: 0;
             }
             &__infos{ /*text d'info partie gauche*/
@@ -80,35 +80,14 @@ header {
         /*colonne de droite -Début*/
         & .col_droite{
             width: 100%;
-            margin: 0;   
+               margin: auto;
                 &__title{               
-                    margin: 0 2em 1em 2em;              
+                    margin: 0 2em 1em 2em; 
+                    & .title_recommandation{
+                        font-size: 27px;
+                    }
     }
-    & table{ /*contenu du tableau*/
-        width: 100%;
-        & tr{
-            & td{
-           
-            }
-            & .cellule_gauche{
-                width: 15vw;
-                margin: 1em 2em 0 0;   
-             }
-            & .cellule_droite{
-                
-                margin-right: 5vw;
-                & h1{
-                    text-align: center;
-            }
-                & h2{
-                    text-align: center;
-            }
-                & p{
-                    text-align: center;  
-            }
-          }
-        }
-      }  
+  
     & .recommandation{
         width: 100%;   
         & td{        
@@ -118,6 +97,85 @@ header {
             }      
         }
     }
+table tr td {
+    display: block;
+}
+    table{ /*contenu du tableau*/
+        width: 100%;
+        & tbody{
+            width: 100%;
+            
+        & tr{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & td{
+                display: flex;
+               justify-content: center;
+                width: 100%;
+                
+            
+            &.cellule_gauche{
+                justify-content: center;
+                margin: 1em  0 0; 
+                width: 100%;
+                & br{ /*permet de tout mettre sur une seule ligne*/
+                    display: none;
+                }
+                & p{
+                    text-decoration: underline;
+                }
+             }
+            &.cellule_droite{
+                width: 100%;
+                
+                & h2{
+                    text-align: center;
+            }
+                & h3{
+                    text-align: center;
+            }
+                & p{
+                    text-align: center;  
+                }}
+          }
+        }
+      }         
+        }
+.recommandation{
+        
+    & tbody{
+        width: 100%;
+            & td{
+               background-color: red;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+                 & h2{
+                    margin: 0.5em 0 0.3em 0;
+                    font-size: 25px;
+                    font-family: $font_style_texte;
+                    font-weight: 600;
+                    line-height: 20px;
+                     
+            }
+                & h3{
+                    margin: 0.3em 0 0.3em 0;
+                    font-size: 20px;
+                    font-family: $font_style_texte;
+                    font-weight: 500;
+            }
+                & p{
+                    margin: 0.3em 0 0.3em 0;
+                    font-size: 15px;
+                    font-family: $font_style_texte;
+                    font-weight: 400;
+                
+            }
+    }}
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
     display: inline;
