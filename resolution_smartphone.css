@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* Scss Document */
 header {
   display: flex;
   /*utilisation de flexblox*/
@@ -73,70 +73,64 @@ header {
         margin: 0 2em 1em 2em; }
         .informations__container .col_droite__title .title_recommandation {
           font-size: 27px; }
-      .informations__container .col_droite .recommandation {
-        width: 100%; }
-        .informations__container .col_droite .recommandation td {
-          text-align: center; }
+      .informations__container .col_droite .recommandation td {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .informations__container .col_droite .recommandation h2 {
+        margin: 0.5em 0 0.3em 0;
+        font-size: 25px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 600;
+        line-height: 20px; }
+      .informations__container .col_droite .recommandation h3 {
+        margin: 0.3em 0 0.3em 0;
+        font-size: 20px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 500; }
+      .informations__container .col_droite .recommandation p {
+        margin: 0.3em 0 0.3em 0;
+        font-size: 15px;
+        font-family: "Baloo 2", cursive;
+        font-weight: 400; }
 
 table tr td {
   display: block; }
 
+tbody {
+  width: 100%; }
+
 table {
   /*contenu du tableau*/
   width: 100%; }
-  table tbody {
-    width: 100%; }
-    table tbody tr {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      table tbody tr td {
-        display: flex;
-        justify-content: center;
-        width: 100%; }
-        table tbody tr td.cellule_gauche {
-          justify-content: center;
-          margin: 1em  0 0;
-          width: 100%; }
-          table tbody tr td.cellule_gauche br {
-            /*permet de tout mettre sur une seule ligne*/
-            display: none; }
-          table tbody tr td.cellule_gauche p {
-            text-decoration: underline; }
-        table tbody tr td.cellule_droite {
-          width: 100%; }
-          table tbody tr td.cellule_droite h2 {
-            text-align: center; }
-          table tbody tr td.cellule_droite h3 {
-            text-align: center; }
-          table tbody tr td.cellule_droite p {
-            text-align: center; }
-
-.recommandation tbody {
-  width: 100%; }
-  .recommandation tbody td {
-    background-color: red;
+  table tr {
     width: 100%;
     display: flex;
-    flex-direction: column; }
-  .recommandation tbody h2 {
-    margin: 0.5em 0 0.3em 0;
-    font-size: 25px;
-    font-family: "Baloo 2", cursive;
-    font-weight: 600;
-    line-height: 20px; }
-  .recommandation tbody h3 {
-    margin: 0.3em 0 0.3em 0;
-    font-size: 20px;
-    font-family: "Baloo 2", cursive;
-    font-weight: 500; }
-  .recommandation tbody p {
-    margin: 0.3em 0 0.3em 0;
-    font-size: 15px;
-    font-family: "Baloo 2", cursive;
-    font-weight: 400; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    table tr td {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      table tr td.cellule_gauche {
+        justify-content: center;
+        margin: 1em  0 0;
+        width: 100%; }
+        table tr td.cellule_gauche br {
+          /*permet de tout mettre sur une seule ligne*/
+          display: none; }
+        table tr td.cellule_gauche p {
+          text-decoration: underline; }
+      table tr td.cellule_droite {
+        width: 100%; }
+        table tr td.cellule_droite h2 {
+          text-align: center; }
+        table tr td.cellule_droite h3 {
+          text-align: center; }
+        table tr td.cellule_droite p {
+          text-align: center; }
 
 /*Mise en forme des icones*/
 .icones {

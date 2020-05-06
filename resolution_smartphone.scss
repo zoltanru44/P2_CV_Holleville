@@ -89,10 +89,33 @@ header {
     }
   
     & .recommandation{
-        width: 100%;   
-        & td{        
-            text-align: center;
-         }     
+                & td{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                    align-items: center;
+            }
+                 & h2{
+                    margin: 0.5em 0 0.3em 0;
+                    font-size: 25px;
+                    font-family: $font_style_texte;
+                    font-weight: 600;
+                    line-height: 20px;
+                     
+            }
+                & h3{
+                    margin: 0.3em 0 0.3em 0;
+                    font-size: 20px;
+                    font-family: $font_style_texte;
+                    font-weight: 500;
+            }
+                & p{
+                    margin: 0.3em 0 0.3em 0;
+                    font-size: 15px;
+                    font-family: $font_style_texte;
+                    font-weight: 400;
+                
+            }
     }
             }      
         }
@@ -100,10 +123,12 @@ header {
 table tr td {
     display: block;
 }
+tbody{
+  width: 100%;
+}
     table{ /*contenu du tableau*/
         width: 100%;
-        & tbody{
-            width: 100%;
+        
             
         & tr{
             width: 100%;
@@ -143,39 +168,8 @@ table tr td {
           }
         }
       }         
-        }
-.recommandation{
         
-    & tbody{
-        width: 100%;
-            & td{
-               background-color: red;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-                 & h2{
-                    margin: 0.5em 0 0.3em 0;
-                    font-size: 25px;
-                    font-family: $font_style_texte;
-                    font-weight: 600;
-                    line-height: 20px;
-                     
-            }
-                & h3{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 20px;
-                    font-family: $font_style_texte;
-                    font-weight: 500;
-            }
-                & p{
-                    margin: 0.3em 0 0.3em 0;
-                    font-size: 15px;
-                    font-family: $font_style_texte;
-                    font-weight: 400;
-                
-            }
-    }}
+
 /*Mise en forme des icones*/
 .icones{  /*icones loisirs*/
     display: inline;
