@@ -61,6 +61,10 @@ header {
                 & .apropos{/*cas "A propos" qui est plus grande*/
                     display: inline;
                     text-align: center;
+                    & p{
+                        text-align: justify;
+                        text-align-last: center;
+                    }
                 } 
             }   
         }

@@ -75,17 +75,17 @@ header {
       line-height: 1.5em;
       margin: 0; }
     .informations__container .col_gauche__infos {
-      /*text d'info parie gauche*/
+      /*textes d'info partie gauche*/
       margin: 2em 1em;
-      text-align: justify;
       font-size: 17px;
       font-family: "Baloo 2", cursive;
       font-weight: 500;
       line-height: 20px; }
       .informations__container .col_gauche__infos .apropos {
         /*cas "A propos" qui est plus grande*/
-        height: 35em;
-        text-align: justify; }
+        height: 35em; }
+        .informations__container .col_gauche__infos .apropos p {
+          text-align: justify; }
   .informations__container .loisir {
     height: 6em;
     line-height: 6em;

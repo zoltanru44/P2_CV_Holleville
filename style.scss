@@ -93,16 +93,19 @@ header {
             margin: 0;
                 
             }
-            &__infos{ /*text d'info parie gauche*/
+            &__infos{ /*textes d'info partie gauche*/
                  margin: 2em 1em ;
-                text-align: justify;
-                font-size: 17px;
+                 font-size: 17px;
                 font-family: $font_style_texte;
                 font-weight: 500;
                 line-height: 20px;
+                
                 & .apropos{/*cas "A propos" qui est plus grande*/
                     height: 35em;
-                    text-align: justify;
+                    
+                    & p{
+                        text-align: justify;
+                    }
                 }
                                 
             }   

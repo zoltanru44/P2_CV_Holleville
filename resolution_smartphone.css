@@ -55,6 +55,9 @@ header {
           /*cas "A propos" qui est plus grande*/
           display: inline;
           text-align: center; }
+          .informations__container .col_gauche__infos .apropos p {
+            text-align: justify;
+            text-align-last: center; }
     .informations__container .loisir {
       height: 5em;
       line-height: 5em;
