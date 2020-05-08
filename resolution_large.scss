@@ -1,5 +1,9 @@
 /* Scss Document */
+$clr_primary:#1E88E5;
 body{
     max-width: 1200px;
+    margin: 8px auto;
+    border-left: 8px solid white;
+    border-right: 1px solid $clr_primary;
 }
  
