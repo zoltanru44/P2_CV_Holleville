@@ -27,7 +27,7 @@ header {
     text-align: center;
     margin: 0; }
 
-/*correction du nom si écran plus petit que 473px*/
+/*correction du nom si écran plus petit que 422px*/
 @media screen and (max-width: 422px) {
   header {
     height: 350px; }
