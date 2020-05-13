@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,mBAAmB;AACnB,AAAA,OAAO,CAAA;EAAE,oBAAoB;CAK5B;;AAJI,AAAD,gBAAU,CAAA;EAAE,mBAAmB;EAC3B,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "resolution_tablette.scss"
+    ],
+    "names": [],
+    "file": "resolution_tablette.css"
+}

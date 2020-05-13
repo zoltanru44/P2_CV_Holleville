@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,mBAAmB;AAEnB,AAAA,IAAI,CAAA;EACA,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,QAAQ;EAChB,WAAW,EAAE,eAAe;EAC5B,YAAY,EAAE,GAAG,CAAC,KAAK,CALd,OAAO;CAMnB",
+    "sources": [
+        "resolution_large.scss"
+    ],
+    "names": [],
+    "file": "resolution_large.css"
+}

@@ -1,8 +1,12 @@
 @charset "UTF-8";
 /* Scss Document */
 .profil {
-  /*bandeau d'entête*/ }
-  .profil__picture {
-    /*image de profil*/
-    width: 20vw;
-    height: 20vw; }
+  /*bandeau d'entête*/
+}
+
+.profil__picture {
+  /*image de profil*/
+  width: 20vw;
+  height: 20vw;
+}
+/*# sourceMappingURL=resolution_tablette.css.map */
